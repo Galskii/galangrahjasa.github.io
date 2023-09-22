@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aritmatika</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="identitas">
+            <div class="nav">
+                <div class="id-diri">
+                    <p>
+                        Nama : I Putu Galang Januarta Rahjasa
+                    </p>
+                    <p>
+                        NIM  : 2215101037
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <h1>Operasi Aritmatika</h1>
+    
+    <div class="background">
+        <h2>Deret Fibonacci</h2>
+        <label for="fibonacci-input">Masukkan jumlah angka Fibonacci :</label>
+        <input type="number" id="fibonacci-input">
+        <p id="fibonacci-result"></p>
+        <button onclick="hitungFibonacci()">Hitung</button>
+    </div>
+    
+    <div class="volume">
+    <h3>Perhitungan Volume Bangun Ruang</h3>
+    <label for="jenis-bangun">Pilih Jenis Bangun Ruang :</label>
+<select id="jenis-bangun">
+    <option value="kubus">Kubus</option>
+    <option value="balok">Balok</option>
+    <option value="tabung">Tabung</option>
+</select>
+
+<div id="volume-input">
+    <div id="kubus-input" style="display:none;">
+        <h2>Perhitungan Volume Kubus</h2>
+        <label for="sisi-kubus">Panjang Sisi:</label>
+        <input type="number" id="sisi-kubus">
+        <p id="volume-kubus-result"></p>
+        <button onclick="hitungVolumeKubus()">Hitung</button>
+    </div>
+
+    <div id="balok-input" style="display:none;">
+        <h2>Perhitungan Volume Balok</h2>
+        <label for="panjang-balok">Panjang:</label>
+        <input type="number" id="panjang-balok">
+        <label for="lebar-balok">Lebar:</label>
+        <input type="number" id="lebar-balok">
+        <label for="tinggi-balok">Tinggi:</label>
+        <input type="number" id="tinggi-balok">
+        <p id="volume-balok-result"></p>
+        <button onclick="hitungVolumeBalok()">Hitung</button>
+    </div>
+
+    <div id="tabung-input" style="display:none;">
+        <h2>Perhitungan Volume Tabung</h2>
+        <label for="jari-jari-tabung">Jari-jari:</label>
+        <input type="number" id="jari-jari-tabung">
+        <label for="tinggi-tabung">Tinggi:</label>
+        <input type="number" id="tinggi-tabung">
+        <p id="volume-tabung-result"></p>
+        <button onclick="hitungVolumeTabung()">Hitung</button>
+    </div>
+</div>
+</div> 
+    <script src="app.js"></script>
+</body>
+</html>
